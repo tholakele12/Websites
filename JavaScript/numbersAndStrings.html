@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <p id="outputText"></p>
+
+    <script>
+
+        var text1 ="11"
+        var text2 ="2"
+
+        var num1 = stringToNumber(text1)
+        var num2 = stringToNumber(text2)
+
+        if(isNaN(num1) || isNaN(num2)) {
+        document.getElementById("outputText").innerHTML= "You have not entered a valid number, Try again"
+    
+    } else {
+        document.getElementById("outputText").innerHTML = num1 + num2
+
+    }
+
+        document.getElementById("outputText").innerHTML = num1 - num2
+
+        function stringToNumber(text) {
+                return parseInt(text)
+            }
+    </script>
+    
+    
+</body>
+</html>
